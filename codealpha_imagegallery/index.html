@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Pixel Gallery</h1>
+        <p>Discover the beauty of the world</p>
+    </header>
+
+    <main class="container">
+
+        <nav class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="architecture">Architecture</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+        </nav>
+
+        <section class="gallery" id="gallery">
+
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=700"
+                 alt="Mountain landscape" data-category="nature">
+
+            <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=700"
+                 alt="Modern architecture" data-category="architecture">
+
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=700"
+                 alt="Beautiful lake" data-category="nature">
+
+            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=700"
+                 alt="Lion" data-category="animals">
+
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=700"
+                 alt="Building design" data-category="architecture">
+
+            <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?w=700"
+                 alt="Wildlife" data-category="animals">
+
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button id="closeBtn" aria-label="Close">&times;</button>
+        <button id="prevBtn" aria-label="Previous image">&#10094;</button>
+        <img id="lightboxImage" src="" alt="Selected gallery image">
+        <button id="nextBtn" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>© 2026 Pixel Gallery | CodeAlpha Internship Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
